@@ -1,0 +1,8 @@
+Models,Accuracy Scores
+Support Vector Machine,0.7938478690518421
+Multilayer Perceptron,0.7631378908427507
+Random Forest,0.7584756499265191
+Gradient Boosting,0.7324785891653576
+AdaBoost,0.7261946992347844
+Naive Bayes,0.7172249531242082
+Decision Tree,0.6504839608777175
