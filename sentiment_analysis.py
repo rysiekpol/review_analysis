@@ -240,9 +240,12 @@ def final_model():
     print(accuracy_score(svm_clf.predict(X_test_tf), y_test))
 
 final_model()
-# Final model gets accuracy of almost 80%. It did not improve previous best model,
-# which means that the default hyperparameters were good.
-# It is also good to see that the model is not overfitting,
-# because the accuracy score on test set is almost the same as on train set
-# To improve we could use e.g. RoBERTa model or try with other models not used in this analysis
+
+"""
+Final model gets accuracy of almost 80%. It did not improve previous best model,
+which means that the default hyper parameters were good.
+It is also good to see that the model is not overfitting,
+because the accuracy score on test set is almost the same as on train set
+To improve we could use e.g. RoBERTa model or try with other models not used in this analysis
+"""
 

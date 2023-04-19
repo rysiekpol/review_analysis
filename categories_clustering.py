@@ -1,9 +1,7 @@
-import joblib
 import re
 from collections import defaultdict
 import matplotlib.pyplot as plt
 import nltk
-import numpy as np
 import pandas as pd
 from nltk import WordNetLemmatizer, SnowballStemmer, word_tokenize
 from nltk.corpus import stopwords
@@ -14,8 +12,6 @@ from sklearn.feature_extraction.text import CountVectorizer, TfidfVectorizer
 from sklearn.pipeline import Pipeline
 
 from data_processing import get_data
-from plotly import tools
-
 
 # data preprocessing
 
@@ -191,12 +187,14 @@ def training_model():
 
 
 training_model()
-# As we can see in the top_word_for_topics.txt file, the topics are:
-# Topic #1: mostly about the user feelings, like good, nice, to buy, etc.
-# Topic #2: mostly about the product type or features like name, utilities, etc.
-# Topic #3: mostly about the product quality, which is good or bad
+"""
+As we can see in the top_word_for_topics.txt file, the topics are:
+Topic #1: mostly about the user feelings, like good, nice, to buy, etc.
+Topic #2: mostly about the product type or features like name, utilities, etc.
+Topic #3: mostly about the product quality, which is good or bad
 
-# The problem with this approach is that we have to manually check the topics and assign them to the right category.
-# There is also a problem with checking the unsupervised model accuracy, because we don't have the labels.
-# Of course the same words, may be in the different topics, because of the high probability of their appearance in the text.
+The problem with this approach is that we have to manually check the topics and assign them to the right category.
+There is also a problem with checking the unsupervised model accuracy, because we don't have the labels.
+Of course the same words, may be in the different topics, because of the high probability of their appearance in the text.
+"""
 
